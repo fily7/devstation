@@ -10,6 +10,7 @@ WORKDIR /app
 RUN pacman -Sy --needed --noconfirm python python-pip zig go nodejs npm luarocks
 # tools
 RUN pacman -Sy --needed --noconfirm tmux neovim fish git ripgrep fzf fd exa bat lazygit unzip z
+RUN git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # posh
 RUN mkdir -p /root/.local/bin
 RUN curl -s https://ohmyposh.dev/install.sh | bash -sh

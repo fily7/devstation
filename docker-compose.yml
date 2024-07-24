@@ -1,0 +1,9 @@
+services:
+  station:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+      - ./sandbox:/sandbox
+      - ./.config:/root/.config

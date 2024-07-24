@@ -87,12 +87,6 @@
       "alignment": "left",
       "segments": [
         {
-          "type": "session",
-          "style": "plain",
-          "foreground": "green",
-          "template": " \uedce {{ .UserName }} at "
-        },
-        {
           "foreground": "blue",
           "properties": {
             "home_icon": "~",
@@ -154,15 +148,6 @@
     {
       "alignment": "right",
       "segments": [
-        {
-          "background": "#ffff66",
-          "foreground": "#111111",
-          "invert_powerline": true,
-          "powerline_symbol": "\ue0b2",
-          "style": "powerline",
-          "template": " \uf0ad ",
-          "type": "root"
-        },
         {
           "foreground": "blue",
           "invert_powerline": true,
