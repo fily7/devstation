@@ -24,3 +24,5 @@ alias cls clear
 alias py python3
 
 alias lg lazygit
+
+alias config "vim $HOME/.config/"
