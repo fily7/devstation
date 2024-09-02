@@ -11,7 +11,7 @@ oh-my-posh init fish --config $HOME/.config/omp/gor.omp.json | source
 
 alias cat bat
 
-alias ls exa
+alias ls eza
 alias ll "ls -l"
 alias la "ls -la"
 alias l ll

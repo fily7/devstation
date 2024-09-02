@@ -9,7 +9,7 @@ WORKDIR /app
 # languages
 RUN pacman -Sy --needed --noconfirm python python-pip zig go nodejs npm luarocks
 # tools
-RUN pacman -Sy --needed --noconfirm openssh tmux neovim fish git ripgrep fzf fd exa bat lazygit unzip z
+RUN pacman -Sy --needed --noconfirm openssh tmux neovim fish git ripgrep fzf fd eza bat lazygit unzip z
 # tmux
 RUN git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # posh
