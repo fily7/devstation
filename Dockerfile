@@ -19,5 +19,8 @@ RUN curl -s https://ohmyposh.dev/install.sh | bash -sh
 RUN git config --global user.name "$USER_NAME" && git config --global user.email "$USER_EMAIL" && git config --global --add safe.directory /app
 
 COPY ./.config/ /root/.config/
+COPY ./scripts/entry.sh /root/entry.sh
+
+ENTRYPOINT ["sh", "/root/entry.sh"]
 
 CMD ["tail", "-f", "/dev/null"]
