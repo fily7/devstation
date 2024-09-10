@@ -5,6 +5,7 @@ end
 set fish_greeting
 
 fish_add_path $HOME/.local/bin/
+fish_add_path $HOME/bin/
 
 oh-my-posh init fish | source
 oh-my-posh init fish --config $HOME/.config/omp/gor.omp.json | source
