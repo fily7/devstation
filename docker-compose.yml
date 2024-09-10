@@ -8,3 +8,5 @@ services:
       - ./sandbox:/sandbox
       - ./.config:/root/.config
       - ./ssh-config:/root/ssh-config
+      - ./.data/local:/root/.local 
+      - ./.data/cache:/root/.cache 

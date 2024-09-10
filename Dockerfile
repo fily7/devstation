@@ -13,8 +13,8 @@ RUN pacman -Sy --needed --noconfirm openssh tmux neovim fish git ripgrep fzf fd 
 # tmux
 RUN git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # posh
-RUN mkdir -p /root/.local/bin
-RUN curl -s https://ohmyposh.dev/install.sh | bash -sh
+RUN mkdir -p /root/bin
+RUN curl -s https://ohmyposh.dev/install.sh | bash -s -- -d /root/bin
 
 RUN git config --global user.name "$USER_NAME" && git config --global user.email "$USER_EMAIL" && git config --global --add safe.directory /app
 
