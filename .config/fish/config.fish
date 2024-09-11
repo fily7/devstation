@@ -27,3 +27,4 @@ alias py python3
 alias lg lazygit
 
 alias config "vim $HOME/.config/"
+alias reload_fish ". $HOME/.config/fish/config.fish"
