@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "blocks": [
     {
-      "_color": [
+      "_segments": [
         {
           "type": "text",
           "foreground": "black",
@@ -128,7 +128,7 @@
           "foreground_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}yellow{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}red{{ end }}",
-            "{{ if gt .Ahead 0 }}lightBlue{{ end }}",
+            "{{ if gt .Ahead 0 }}cyan{{ end }}",
             "{{ if gt .Behind 0 }}lightRed{{ end }}"
           ],
           "foreground": "green",
