@@ -3,6 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    env_file:
+        - ${HOME}/.env
     volumes:
       - ./app:/app
       - ./sandbox:/sandbox
