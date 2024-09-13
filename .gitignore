@@ -2,3 +2,7 @@ ssh-config
 app
 sandbox
 .data
+.config/go/telemetry/*
+.config/tmux/plugins/
+.config/fish/fish_variables
+.config/lazygit/config.yml
