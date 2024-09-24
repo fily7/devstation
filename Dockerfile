@@ -2,16 +2,11 @@ FROM archlinux:base
 
 
 WORKDIR /app
-# languages
-RUN pacman -Sy --needed --noconfirm python python-pip zig go nodejs npm luarocks
-# tools
-RUN pacman -Sy --needed --noconfirm openssh tmux neovim fish git ripgrep fzf fd eza bat lazygit unzip z wget htop
-# tmux
-RUN git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-# posh
-RUN mkdir -p /root/bin
+RUN pacman -Sy --needed --noconfirm which make wget htop openssh unzip && \
+pacman -Sy --needed --noconfirm python python-pip zig go nodejs npm luarocks && \
+pacman -Sy --needed --noconfirm tmux neovim fish git ripgrep fzf fd eza bat lazygit && \
+mkdir -p /root/bin
 RUN curl -s https://ohmyposh.dev/install.sh | bash -s -- -d /root/bin
-
 RUN git config --global --add safe.directory /app
 
 COPY ./.config/ /root/.config/
