@@ -10,6 +10,10 @@ fish_add_path $HOME/bin/
 oh-my-posh init fish | source
 oh-my-posh init fish --config $HOME/.config/omp/gor.omp.json | source
 
+if test -d /app/venv
+    source /app/venv/bin/activate.fish
+end
+
 alias cat bat
 
 alias ls eza
