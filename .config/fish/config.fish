@@ -35,3 +35,6 @@ alias reload_fish ". $HOME/.config/fish/config.fish"
 
 alias omp_gor "oh-my-posh init fish --config $HOME/.config/omp/gor.omp.json | source"
 alias omp_pallette "oh-my-posh init fish --config $HOME/.config/omp/pallette.omp.json | source"
+
+alias gor "go run"
+alias gorr "go run main.go"
