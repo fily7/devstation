@@ -1,11 +1,12 @@
 services:
   station:
-    # image: mrgorre/devstation:latest
+    # image: fily7/devstation:latest
     build:
       context: .
       dockerfile: Dockerfile
-    env_file:
-      - ${HOME}/.env
+    environment:
+      - USER_NAME:fily7
+      - USER_EMAIL:i@fily7.tech
     volumes:
       - ./app:/app
       - ./sandbox:/sandbox
