@@ -5,7 +5,7 @@ fi
 # base tools
 pacman -Sy --needed --noconfirm which make wget htop openssh unzip
 # langs
-pacman -Sy --needed --noconfirm python python-pip go nodejs npm luarocks
+pacman -Sy --needed --noconfirm python python-pip go nodejs npm luarocks zig
 # dev tools
 pacman -Sy --needed --noconfirm neovim git ripgrep fzf fd eza bat lazygit
 
